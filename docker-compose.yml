@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+
+  fuse-appliance-template:
+    build:
+      context: .
+    ports:
+      - $API_PORT:8080
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
